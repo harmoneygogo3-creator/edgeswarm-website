@@ -3,132 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swarm-Sync AI - Unified Enterprise Intelligence</title>
+  <title>Swarm-Sync AI — Unified Enterprise Intelligence</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero { background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 70%); }
-    .glow { text-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
-    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); }
+    .hero { 
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .glow { text-shadow: 0 0 40px rgba(59, 130, 246, 0.5); }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+    .coin { transition: all 0.3s ease; }
+    .coin:hover { transform: scale(1.08); }
   </style>
 </head>
 <body class="bg-slate-950 text-white">
 
   <!-- Hero -->
-  <section class="hero min-h-screen flex items-center justify-center relative">
-    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-      <img src="https://i.ibb.co/0jKzX9K/swarm-sync-logo.png" alt="Swarm-Sync AI" class="mx-auto h-32 mb-8">
+  <section class="hero min-h-screen flex items-center justify-center">
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+      <img src="https://i.ibb.co/0jKzX9K/swarm-sync-logo.png" alt="Swarm-Sync AI" class="mx-auto h-28 mb-8">
       <h1 class="text-6xl md:text-7xl font-bold glow">Swarm-Sync AI</h1>
-      <p class="text-3xl text-blue-300 mt-4">Unified Enterprise Intelligence</p>
+      <p class="text-3xl text-blue-400 mt-4">Unified Enterprise Intelligence</p>
       
-      <p class="mt-8 text-xl max-w-2xl mx-auto">
-        Turn your company's idle computers into a powerful, private, energy-efficient AI swarm network.
+      <p class="mt-8 text-xl max-w-3xl mx-auto">
+        Transform your company's idle computers into a powerful, private, energy-efficient AI swarm network.
       </p>
 
       <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
         <button onclick="startTrial()" 
-                class="bg-emerald-500 hover:bg-emerald-600 px-12 py-6 rounded-3xl text-2xl font-semibold transition-all">
+                class="bg-emerald-500 hover:bg-emerald-600 px-10 py-5 rounded-3xl text-xl font-semibold transition-all">
           Start 7-Day Free Trial
         </button>
-        <button onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})" 
-                class="border-2 border-white/70 hover:bg-white/10 px-12 py-6 rounded-3xl text-2xl font-semibold transition-all">
+        <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})" 
+                class="border border-white/60 hover:bg-white/10 px-10 py-5 rounded-3xl text-xl font-semibold transition-all">
           View Monthly Pricing
         </button>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
+  <!-- Pricing Section -->
   <section id="pricing" class="py-24 bg-slate-900">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-6">Flexible Pricing</h2>
-      <div class="glass rounded-3xl p-12">
-        <p class="text-emerald-400 text-2xl">7 Days Free Trial</p>
-        <p class="text-7xl font-bold mt-4">$300 <span class="text-3xl">/ month</span></p>
-        <p class="text-slate-400 mt-6">After trial, continue with monthly subscription</p>
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold">Flexible Pricing</h2>
+        <p class="text-xl text-slate-400 mt-4">7 Days Free Trial • Then $300/month</p>
+      </div>
 
-        <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 text-left">
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">Bitcoin (BTC)</p>
-            <p class="text-sm break-all mt-2">bc1q07ljy9rkq0naxxet6jys2xscg5v0pd7fc8n6wr</p>
-          </div>
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">Ethereum (ETH)</p>
-            <p class="text-sm break-all mt-2">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
-          </div>
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">BNB</p>
-            <p class="text-sm break-all mt-2">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
-          </div>
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">Solana (SOL)</p>
-            <p class="text-sm break-all mt-2">VNdVrPVMYSNqp3XnbifyUvvpQiKCRqHVWaHjJPSBoPv</p>
-          </div>
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">USDT (TRC20)</p>
-            <p class="text-sm break-all mt-2">THVcQbRmDCwdo5wqbNxPdTRajJ3FPiJGPY</p>
-          </div>
-          <div class="bg-slate-800 p-6 rounded-2xl">
-            <p class="font-semibold">USDT (BEP20)</p>
-            <p class="text-sm break-all mt-2">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
+      <div class="glass rounded-3xl p-12 max-w-2xl mx-auto">
+        <div class="text-center">
+          <p class="text-emerald-400 text-2xl">7 Days Free Trial</p>
+          <p class="text-7xl font-bold mt-3">$300 <span class="text-3xl font-normal">/ month</span></p>
+          <p class="text-slate-400 mt-2">After trial, continue with monthly subscription in crypto</p>
+        </div>
+
+        <div class="mt-12">
+          <p class="text-lg font-medium mb-6 text-center">Pay with Crypto</p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">Bitcoin (BTC)</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">bc1q07ljy9rkq0naxxet6jys2xscg5v0pd7fc8n6wr</p>
+            </div>
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">Ethereum (ETH)</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
+            </div>
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">BNB</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
+            </div>
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">Solana (SOL)</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">VNdVrPVMYSNqp3XnbifyUvvpQiKCRqHVWaHjJPSBoPv</p>
+            </div>
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">USDT (TRC20)</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">THVcQbRmDCwdo5wqbNxPdTRajJ3FPiJGPY</p>
+            </div>
+            <div class="coin bg-slate-800 p-5 rounded-2xl text-center">
+              <p class="font-semibold">USDT (BEP20)</p>
+              <p class="text-xs mt-3 break-all font-mono select-all">0x0Ec16103D83976728E70F46EFebD6f8697050926</p>
+            </div>
           </div>
         </div>
 
         <button onclick="startTrial()" 
-                class="mt-12 w-full bg-white text-black py-6 rounded-3xl text-2xl font-semibold">
-          Start Your 7-Day Free Trial
+                class="mt-12 w-full bg-white text-black py-6 rounded-3xl text-2xl font-semibold hover:bg-emerald-400 transition-all">
+          Start Your 7-Day Free Trial Now
         </button>
       </div>
     </div>
   </section>
 
-  <!-- Chat Button -->
-  <button onclick="toggleChat()" 
-          class="fixed bottom-8 right-8 bg-gradient-to-r from-blue-500 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl z-50 text-3xl hover:scale-110 transition">
-    <i class="fas fa-robot"></i>
-  </button>
-
-  <!-- Chat Window -->
-  <div id="chat-window" class="hidden fixed bottom-28 right-8 w-96 h-[520px] bg-slate-900 rounded-3xl shadow-2xl flex flex-col border border-slate-700 overflow-hidden">
-    <div class="bg-slate-800 p-4 flex items-center gap-3">
-      <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-xl">🤖</div>
-      <div>
-        <p class="font-semibold">Swarm-Sync AI Assistant</p>
-        <p class="text-xs text-emerald-400">Always here to help</p>
-      </div>
-    </div>
-    <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-sm space-y-4"></div>
-    <div class="p-4 border-t border-slate-700">
-      <input id="chat-input" type="text" placeholder="Ask anything about Swarm-Sync AI..." 
-             class="w-full bg-slate-800 rounded-2xl px-5 py-4 focus:outline-none" 
-             onkeypress="if(event.key==='Enter') sendChatMessage()">
-    </div>
-  </div>
+  <!-- Footer -->
+  <footer class="bg-black py-12 text-center text-slate-400">
+    <p>© 2026 Swarm-Sync AI • All Rights Reserved</p>
+    <p class="mt-4">Support: support@swarmsync.ai</p>
+  </footer>
 
   <script>
-    function toggleChat() {
-      document.getElementById('chat-window').classList.toggle('hidden');
-    }
-
-    function sendChatMessage() {
-      const input = document.getElementById('chat-input');
-      const messages = document.getElementById('chat-messages');
-      if (!input.value.trim()) return;
-
-      messages.innerHTML += `<div class="text-right"><span class="inline-block bg-blue-600 px-5 py-3 rounded-3xl">${input.value}</span></div>`;
-      messages.scrollTop = messages.scrollHeight;
-
-      setTimeout(() => {
-        messages.innerHTML += `<div class="text-left"><span class="inline-block bg-slate-700 px-5 py-3 rounded-3xl">Thank you for your question about Swarm-Sync AI. Our team will assist you shortly with all details regarding the 7-day trial and monthly subscription.</span></div>`;
-        messages.scrollTop = messages.scrollHeight;
-      }, 1000);
-
-      input.value = '';
-    }
-
     function startTrial() {
-      alert("✅ 7-Day Free Trial Activated!\n\nThe download link has been prepared.\n\nAfter 7 days, the product will automatically pause and prompt you to subscribe for $300/month in crypto.");
+      alert("✅ 7-Day Free Trial Activated!\n\nThe download link will be sent to your registered email.\n\nAfter 7 days, the product will pause and ask for $300/month subscription in crypto.");
     }
   </script>
 </body>
